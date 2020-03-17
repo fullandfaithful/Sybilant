@@ -10,7 +10,7 @@ endif
 
 syn keyword todo TODO XXX
 syn region comment start='\\\\' end='\n' contains=todo
-syn region mlcomment start='\\\*' end='\*\\'
+syn region mlcomment start='\\\*' end='\*\\' contains=todo
 
 syn match funcallSymbol '\((\s*\)\@<=\<[^() \t]\+\>'
 syn match exteriorSymbol '\<[^() \t]\+:\{1,2}[^() \t]\+\>'
@@ -36,6 +36,7 @@ hi def link exteriorFuncallSymbol SybilExtFunSymb
 hi def link functionNamespace SybilFunName
 hi def link rule SybilLLI
 hi def link comment SybilComment
+hi def link mlcomment SybilComment
 hi def link variable SybilKey
 hi def link string SybilString
 

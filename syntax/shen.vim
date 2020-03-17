@@ -34,7 +34,7 @@ hi def link funcallSymbol SybilFunction
 hi def link exteriorSymbol SybilExtSymb
 hi def link exteriorFuncallSymbol SybilExtFunSymb
 hi def link functionNamespace SybilFunName
-hi def link rule SybilLLI
+hi def link rule SybilFunName
 hi def link comment SybilComment
 hi def link mlcomment SybilComment
 hi def link variable SybilKey

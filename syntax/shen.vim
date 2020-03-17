@@ -15,8 +15,8 @@ syn match funcallSymbol '\((\s*\)\@<=\<[^() \t]\+\>'
 syn match exteriorSymbol '\<[^() \t]\+:\{1,2}[^() \t]\+\>'
 syn match exteriorFuncallSymbol '\((\s*\)\@<=\<[^() \t]\+:\{1,2}[^() \t]\+\>'
 syn match functionNamespace '#\'[^() \t]\+'
-syn match keyword '\<:[^() \t]\+\>'
-syn match lambdaListIndicators '&optional\|&rest\|&key\|&allow-other-keys\|&aux\|&whole\|&body\|&environment'
+syn match variable '[A-Z][^ \(\)[]<>"]*'
+syn match rule '->'
 
 syn match defSymbol '\<def[^() \t]\+\>'
 syn match exteriorDefSymb '\<[^() \t]\+:def[^() \t]\+\>'
@@ -33,9 +33,9 @@ hi def link funcallSymbol SybilFunction
 hi def link exteriorSymbol SybilExtSymb
 hi def link exteriorFuncallSymbol SybilExtFunSymb
 hi def link functionNamespace SybilFunName
-hi def link lambdaListIndicators SybilLLI
+hi def link rule SybilLLI
 hi def link comment SybilComment
-hi def link keyword SybilKey
+hi def link variable SybilKey
 hi def link string SybilString
 
 

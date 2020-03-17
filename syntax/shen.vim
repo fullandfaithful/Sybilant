@@ -9,7 +9,7 @@ endif
 " Syntax: {{{
 
 syn keyword todo TODO XXX
-syn region comment start='//' end='\n' contains=todo
+syn region comment start='\\\\' end='\n' contains=todo
 
 syn match funcallSymbol '\((\s*\)\@<=\<[^() \t]\+\>'
 syn match exteriorSymbol '\<[^() \t]\+:\{1,2}[^() \t]\+\>'

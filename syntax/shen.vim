@@ -10,12 +10,13 @@ endif
 
 syn keyword todo TODO XXX
 syn region comment start='\\\\' end='\n' contains=todo
+syn region bcomment start='(' end=')' fold transparent
 
 syn match funcallSymbol '\((\s*\)\@<=\<[^() \t]\+\>'
 syn match exteriorSymbol '\<[^() \t]\+:\{1,2}[^() \t]\+\>'
 syn match exteriorFuncallSymbol '\((\s*\)\@<=\<[^() \t]\+:\{1,2}[^() \t]\+\>'
 syn match functionNamespace '#\'[^() \t]\+'
-syn match variable '[A-Z][^ \(\)[]<>"]*'
+syn match variable '[A-Z][^ \(\)\[\]<>"]*'
 syn match rule '->'
 
 syn match defSymbol '\<def[^() \t]\+\>'
